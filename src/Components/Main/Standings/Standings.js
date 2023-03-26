@@ -5,73 +5,73 @@ import "./Standings.css"
 
 // build team standings array
 const allTeams = [
-    {
+    {   
         "team_name":"Dragons",
         "wins":"22",
         "losses":"8",
         "streak":"W7",
     },
-    {
+    {   
         "team_name":"Flyers",
         "wins":"21",
         "losses":"9",
         "streak":"L1",
     },
-    {
+    {   
         "team_name":"Kiwis",
         "wins":"19",
         "losses":"11",
         "streak":"W2",
     },
-    {
+    {   
         "team_name":"Penguins",
         "wins":"19",
         "losses":"11",
         "streak":"L1",
     },
-    {
+    {   
         "team_name":"Red Backs",
         "wins":"18",
         "losses":"12",
         "streak":"W1",
     },
-    {
+    {   
         "team_name":"Pistols",
         "wins":"17",
         "losses":"13",
         "streak":"W3",
     },
-    {
+    {   
         "team_name":"Stallions",
         "wins":"15",
         "losses":"15",
         "streak":"W1",
     },
-    {
+    {   
         "team_name":"Fire",
         "wins":"15",
         "losses":"15",
         "streak":"L2",
     },
-    {
+    {   
         "team_name":"Crows",
         "wins":"14",
         "losses":"16",
         "streak":"L1",
     },
-    {
+    {   
         "team_name":"Mariners",
         "wins":"13",
         "losses":"17",
         "streak":"W2",
     },
-    {
+    {   
         "team_name":"Thunder",
         "wins":"9",
         "losses":"21",
         "streak":"L4",
     },
-    {
+    {   
         "team_name":"Comets",
         "wins":"6",
         "losses":"24",
@@ -127,7 +127,7 @@ export default function Standings() {
                     </tr>
                 </thead>
                 <tbody>    
-                    {teamsDescending.map((team, index) => <TableRow key={team.id} rowNumber={index+1} {...team}/> )}
+                    {teamsDescending.map((team, index) => <TableRow key={team.team_name} rowNumber={index+1} {...team}/> )}
                 </tbody>
             </table>
         </section>

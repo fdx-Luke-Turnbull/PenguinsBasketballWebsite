@@ -10,7 +10,7 @@ export default function Home() {
         {/*Container 1*/}
         <div className="mySlidesContainer">
             <img src="images/background-1.jpg" alt='background1'className="mySlides"/>
-            <div class="text">
+            <div className="text">
                 <h3>Strength to Strength</h3>
                 <p>Forward Jeffries returns from injury in near loss to Kiwis.</p>
                 <small>28 February 2023</small>
@@ -19,7 +19,7 @@ export default function Home() {
         {/*Container 2*/}
         <div className="mySlidesContainer">
             <img src="images/background-2.jpg" alt='background2'className="mySlides"/>
-            <div class="text">
+            <div className="text">
                 <h3>Flying High</h3>
                 <p>Penguins continue strong season performance with dominant win over rival Mariners.</p>
                 <small>23 February 2023</small>
@@ -28,7 +28,7 @@ export default function Home() {
         {/*Container 3*/}
         <div className="mySlidesContainer">
             <img src="images/background-3.jpg" alt='background3'className="mySlides"/>
-            <div class="text">
+            <div className="text">
                 <h3>Standing Strong</h3>
                 <p>Penguins show impressive display to local crowd ahead of mid-season break.</p>
                 <small>18 February 2023</small>

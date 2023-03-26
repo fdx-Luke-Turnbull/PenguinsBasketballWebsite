@@ -25,7 +25,7 @@ const EnhancedComponent = (OriginalComponent) => {
               <input className="schedSearch" onChange={this.handleSearch} value={this.state.searchTerm} type="text" placeholder="Team name or Location" />
             </div>
             <div className="printSchedule" onClick={onClickSchedule}>
-              <i class="fa-solid fa-print fa-xl"></i>
+              <i className="fa-solid fa-print fa-xl"></i>
               <p>PRINT FULL SCHEDULE</p>
             </div>
           </div>

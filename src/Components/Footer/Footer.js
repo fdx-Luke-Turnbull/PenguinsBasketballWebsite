@@ -5,7 +5,7 @@ import "./Footer.css"
 
 export default function Footer() {
     return (
-        <div classNameName="footer">
+        <div className="footer">
             <div className="footer_banner secondary">
                 <div className="footer_logo_container">
                     {/*import logo section for footer.*/}

@@ -185,7 +185,7 @@ export class Schedule extends Component {
                 <div className="scheduleContainer">
                     {futureGameSchedule
             .filter(game => `${game.team_name} ${game.location}`.toUpperCase().indexOf(searchTerm.toUpperCase()) >= 0)
-            .map(game => <GameCard key={game.id} {...game}/>)}
+            .map((game,index) => <GameCard key={index} {...game}/>)}
                 </div>
             </div>
         </section>

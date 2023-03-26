@@ -141,26 +141,28 @@ const PlayerCard = (props) => {
                     <div className="playerCard_Front">
                         <img className="player_image" src={props.playerImage} alt="Player" onClick={handleClick}/>
                         <span className="player_number">{props.playerNumber}</span>
-                        <i class="fa-solid fa-repeat fa-lg flip-icon" onClick={handleClick}></i>
+                        <i className="fa-solid fa-repeat fa-lg flip-icon" onClick={handleClick}></i>
                     </div>
                     <div className="playerCard_Back">
                         <span className="player_stats_container" onClick={handleClick}>
                         <table className="player_stats">
-                            <tr className="player_stats_row">
-                                <th>Age</th>
-                                <td>{props.age}</td>
-                            </tr>
-                            <tr className="player_stats_row">
-                                <th>Height</th>
-                                <td>{props.height}</td>
-                            </tr>
-                            <tr className="player_stats_row">
-                                <th>Position</th>
-                                <td>{props.position}</td>
-                            </tr>
+                            <tbody>
+                                <tr className="player_stats_row">
+                                    <th>Age</th>
+                                    <td>{props.age}</td>
+                                </tr>
+                                <tr className="player_stats_row">
+                                    <th>Height</th>
+                                    <td>{props.height}</td>
+                                </tr>
+                                <tr className="player_stats_row">
+                                    <th>Position</th>
+                                    <td>{props.position}</td>
+                                </tr>
+                            </tbody>
                         </table>
                         </span>
-                        <i class="fa-solid fa-repeat fa-lg flip-icon" onClick={handleClick}></i>
+                        <i className="fa-solid fa-repeat fa-lg flip-icon" onClick={handleClick}></i>
                     </div>
                 </ReactCardFlip>
                 <figcaption className="player_name" onClick={handleClick}><span className="player_name_number">{props.playerNumber}</span> - {props.firstName} {props.lastName}</figcaption>   
@@ -174,7 +176,7 @@ export default function Roster() {
         <section id="roster" className="roster secondary"> 
             <h2 className="section_header">Roster</h2>
             <div className = "roster_container primary">
-                {playerRoster.map(player => <PlayerCard key={player.id} {...player}/>)}
+                {playerRoster.map((player,index) => <PlayerCard key={index} {...player}/>)}
             </div>
         </section>
       );

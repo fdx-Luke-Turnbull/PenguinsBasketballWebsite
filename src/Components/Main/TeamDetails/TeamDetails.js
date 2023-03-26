@@ -50,9 +50,9 @@ function GetRowIcon(teamName) {
     const icon = GetRowIcon(teamName);
         
     return (
-        <div style={{display:"inline"}}>
+        <span style={{display:"inline"}}>
             {icon}
-        </div>
+        </span>
     )
     
   };
