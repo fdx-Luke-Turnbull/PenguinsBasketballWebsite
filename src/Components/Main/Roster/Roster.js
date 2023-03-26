@@ -1,118 +1,180 @@
-import React from "react";
+import React, {useState} from "react";
+import ReactCardFlip from 'react-card-flip';
+import "./Roster.css"
 
+//store all player details as an array
+const playerRoster = [
+    {
+        "firstName":"Grace",
+        "lastName":"Wu",
+        "playerNumber":"09",
+        "age":"23",
+        "height":"1.96",
+        "position":"C",
+        "playerImage":"/images/player2.jpg"
+    },
+    {
+        "firstName":"Emily",
+        "lastName":"Davies",
+        "playerNumber":"15",
+        "age":"24",
+        "height":"1.72",
+        "position":"SF",
+        "playerImage":"/images/player1.jpg"
+
+    },
+    {
+        "firstName":"Letitia",
+        "lastName":"Jeffries",
+        "playerNumber":"19",
+        "age":"27",
+        "height":"1.83",
+        "position":"PF",
+        "playerImage":"/images/player3.jpg"
+
+    },
+    {
+        "firstName":"Emma",
+        "lastName":"White",
+        "playerNumber":"23",
+        "age":"24",
+        "height":"1.62",
+        "position":"PG",
+        "playerImage":"/images/player4.jpg"
+
+    },
+    {
+        "firstName":"Isabella",
+        "lastName":"Rodgers",
+        "playerNumber":"29",
+        "age":"25",
+        "height":"1.91",
+        "position":"PF",
+        "playerImage":"/images/player5.jpg"
+
+    },
+    {
+        "firstName":"Chloe",
+        "lastName":"Smith",
+        "playerNumber":"30",
+        "age":"26",
+        "height":"1.73",
+        "position":"SG",
+        "playerImage":"/images/player6.jpg"
+
+    },
+    {
+        "firstName":"Lily",
+        "lastName":"Rose",
+        "playerNumber":"33",
+        "age":"27",
+        "height":"1.71",
+        "position":"SG",
+        "playerImage":"/images/player7.jpg"
+
+    },
+    {
+        "firstName":"Elizabeth",
+        "lastName":"Kennedy",
+        "playerNumber":"36",
+        "age":"29",
+        "height":"2.01",
+        "position":"C",
+        "playerImage":"/images/player8.jpg"
+
+    },
+    {
+        "firstName":"Ella",
+        "lastName":"Rose-Taylor",
+        "playerNumber":"43",
+        "age":"25",
+        "height":"1.62",
+        "position":"PG",
+        "playerImage":"/images/player9.jpg"
+
+    },
+    {
+        "firstName":"Marie",
+        "lastName":"Cabello",
+        "playerNumber":"47",
+        "age":"31",
+        "height":"1.83",
+        "position":"SF",
+        "playerImage":"/images/player10.jpg"
+
+    },
+    {
+        "firstName":"Charlie",
+        "lastName":"Grace",
+        "playerNumber":"54",
+        "age":"34",
+        "height":"1.82",
+        "position":"PF",
+        "playerImage":"/images/player11.jpg"
+
+    },
+    {
+        "firstName":"Ava",
+        "lastName":"Mitchell",
+        "playerNumber":"72",
+        "age":"28",
+        "height":"1.71",
+        "position":"SG",
+        "playerImage":"/images/player12.jpg"
+
+    },
+
+]
+
+// card flip function > set state for flip
+const PlayerCard = (props) => {
+    const [isFlipped, setisFlipped] = useState(false);
+
+    const handleClick = () => {
+        setisFlipped(!isFlipped);
+    }
+    // build player card
+    return (
+        <div className="player_card">
+        <figure className="player_image_container">
+                <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+                    <div className="playerCard_Front">
+                        <img className="player_image" src={props.playerImage} alt="Player" onClick={handleClick}/>
+                        <span className="player_number">{props.playerNumber}</span>
+                        <i class="fa-solid fa-repeat fa-lg flip-icon" onClick={handleClick}></i>
+                    </div>
+                    <div className="playerCard_Back">
+                        <span className="player_stats_container" onClick={handleClick}>
+                        <table className="player_stats">
+                            <tr className="player_stats_row">
+                                <th>Age</th>
+                                <td>{props.age}</td>
+                            </tr>
+                            <tr className="player_stats_row">
+                                <th>Height</th>
+                                <td>{props.height}</td>
+                            </tr>
+                            <tr className="player_stats_row">
+                                <th>Position</th>
+                                <td>{props.position}</td>
+                            </tr>
+                        </table>
+                        </span>
+                        <i class="fa-solid fa-repeat fa-lg flip-icon" onClick={handleClick}></i>
+                    </div>
+                </ReactCardFlip>
+                <figcaption className="player_name" onClick={handleClick}><span className="player_name_number">{props.playerNumber}</span> - {props.firstName} {props.lastName}</figcaption>   
+        </figure>
+    </div> 
+    )
+}
+    // build player card container
 export default function Roster() {
     return (
-        <section id="roster" class="roster secondary"> 
-            <h2 class="section_header">Roster</h2>
-            <div class = "roster_container primary">
-                <div class="player_card">
-                    <figure class="player_image_container">
-                        <div class="player_image_card">
-                            <img class="player_image" src="/images/player2.jpg" alt="Player"/>
-                            <span class="player_number">09</span>
-                        </div>
-                        <figcaption class="player_name">Grace Wu</figcaption>
-                    </figure>
-                </div>
-                <div class="player_card">
-                    <figure>
-                        <div class="player_image_card">
-                            <img class="player_image" src="/images/player1.jpg" alt="Player"/>
-                            <span class="player_number">15</span>
-                        </div>
-                        <figcaption class="player_name">Emily Davies</figcaption>
-                    </figure>
-                </div>
-                <div class="player_card">
-                    <figure>
-                        <div class="player_image_card">
-                            <img class="player_image" src="/images/player3.jpg" alt="Player"/>
-                            <span class="player_number">19</span>
-                        </div>
-                        <figcaption class="player_name">Letitia Jeffries</figcaption>
-                    </figure>
-                </div>
-                <div class="player_card">
-                    <figure>
-                        <div class="player_image_card">
-                            <img class="player_image" src="/images/player4.jpg" alt="Player"/>
-                            <span class="player_number">23</span>
-                        </div>
-                        <figcaption class="player_name">Emma White</figcaption>
-                    </figure>
-                </div>
-                <div class="player_card">
-                    <figure>
-                        <div class="player_image_card">
-                            <img class="player_image" src="/images/player5.jpg" alt="Player"/>
-                            <span class="player_number">29</span>
-                        </div>
-                        <figcaption class="player_name">Isabella Rodgers</figcaption>
-                    </figure>
-                </div>
-                <div class="player_card">
-                    <figure>
-                        <div class="player_image_card">
-                            <img class="player_image" src="/images/player6.jpg" alt="Player"/>
-                            <span class="player_number">30</span>
-                        </div>
-                        <figcaption class="player_name">Chloe Smith</figcaption>
-                    </figure>
-                </div>
-                <div class="player_card">
-                    <figure>
-                        <div class="player_image_card">
-                            <img class="player_image" src="/images/player7.jpg" alt="Player"/>
-                            <span class="player_number">33</span>
-                        </div>
-                        <figcaption class="player_name">Lily Rose</figcaption>
-                    </figure>
-                </div>
-                <div class="player_card">
-                    <figure>
-                        <div class="player_image_card">
-                            <img class="player_image" src="/images/player8.jpg" alt="Player"/>
-                            <span class="player_number">36</span>
-                        </div>
-                        <figcaption class="player_name">Elizabeth Kennedy</figcaption>
-                    </figure>
-                </div>
-                <div class="player_card">
-                    <figure>
-                        <div class="player_image_card">
-                            <img class="player_image" src="/images/player9.jpg" alt="Player"/>
-                            <span class="player_number">43</span>
-                        </div>
-                        <figcaption class="player_name">Ella Rose-Taylor</figcaption>
-                    </figure>
-                </div>
-                <div class="player_card">
-                    <figure>
-                        <div class="player_image_card">
-                            <img class="player_image" src="/images/player10.jpg" alt="Player"/>
-                            <span class="player_number">47</span>
-                        </div>
-                        <figcaption class="player_name">Marie Cabello</figcaption>
-                    </figure>
-                </div>
-                <div class="player_card">
-                    <figure>
-                        <div class="player_image_card">
-                            <img class="player_image" src="/images/player11.jpg" alt="Player"/>
-                            <span class="player_number">54</span>
-                        </div>
-                        <figcaption class="player_name">Charlie Grace</figcaption>
-                    </figure>
-                </div>
-                <div class="player_card">
-                    <figure>
-                        <div class="player_image_card">
-                            <img class="player_image" src="/images/player12.jpg" alt="Player"/>
-                            <span class="player_number">72</span>
-                        </div>
-                        <figcaption class="player_name">Ava Mitchell</figcaption>
-                    </figure>
-                </div>
+        <section id="roster" className="roster secondary"> 
+            <h2 className="section_header">Roster</h2>
+            <div className = "roster_container primary">
+                {playerRoster.map(player => <PlayerCard key={player.id} {...player}/>)}
             </div>
         </section>
       );

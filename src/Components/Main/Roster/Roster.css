@@ -1,0 +1,84 @@
+/*Styling for Roster section.*/
+.roster_container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .player_image_container:hover > .player_name {
+    color: #D0894B;
+    transition: all .3s ease-in-out;
+
+  }
+  .player_image {
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    max-width: 300px; 
+    opacity: 0.3;
+  }
+  
+  .player_number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:xxx-large;
+    font-weight: bold;
+    letter-spacing: 1.2;
+    opacity:1;
+  }
+  
+  .player_stats_container {
+    display: block;
+    text-transform: uppercase;
+    font-size:x-large;
+    font-weight: bold;
+    letter-spacing: 1.2;
+    padding: 10px;
+  }
+
+  .player_stats:hover{
+    transform: scale(1.05);
+    color: #D0894B;
+
+  }
+
+  .player_stats {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 20%;
+    transition: all .3s ease-in-out;
+  }
+  .player_image:hover { 
+    transform: scale(1.05);
+    opacity: 1; 
+    }
+  .playerCard_Front:hover >.player_number {
+    display: none;
+  }
+
+  .player_name_number{
+    font-weight: bolder;
+  }
+  .playerCard_Front,
+  .playerCard_Back{
+    width: 350px;
+    height: 300px;
+  }
+
+  .player_stats_container,
+  .player_stats {
+    height: 100%;
+  }
+  figcaption {
+    padding: 10px;
+  }
+
+.flip-icon {
+    color: #D0894B;
+    position: absolute;
+    right: 40px;
+    top: 25px;
+}

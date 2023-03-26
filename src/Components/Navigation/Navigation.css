@@ -1,0 +1,48 @@
+/*Styling for nav section.*/
+/* "Let's build a responsive navbar and hamburger menu using HTML, CSS, and Javascript" (2023), Gurav, Dev.to, visited 21 February 2022, <https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci> */
+.navbar {
+    z-index:99;
+    position:sticky;
+    top:0;
+    padding: 10px 5%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    border-bottom: 3px solid #D0894B;
+    overflow: none;
+    height:48px;
+  }
+  nav a {
+    color:#f6f6f6;
+    font-size: large;
+  }
+  .nav_menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .hamburgerMenu:hover {
+    color: #D0894B;
+  }
+  @media screen and (max-width: 900px) {
+    .nav_menu {
+        display: block;
+        position: fixed !important;
+        flex-direction: column;
+        justify-content: left;
+        background-color: #f6f6f6;
+        border-top: 3px solid #D0894B;
+        border-bottom: 3px solid #D0894B;
+        width: 100%;
+        height: 100%;
+        right: -150%;
+        top: 5%;
+        padding: 10px;
+        transition: 0.3s ease-out;
+        }
+    nav a {
+        color: #253542;
+    }
+  }

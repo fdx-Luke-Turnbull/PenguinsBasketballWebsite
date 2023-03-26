@@ -1,0 +1,29 @@
+/*Styling for Standings Table section.*/
+.standings_table {
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    text-align: center;
+    border: 0px;
+  }
+  th, td {
+    padding:10px;
+    border-left: 0;
+    border-right: 0px;
+  }
+  tbody tr:hover{
+    background-color:#d0894bc9;
+  }
+  .standingsplace {
+    font-weight: bold;
+  }
+  .team_icon {
+    padding-right: 5px;
+    vertical-align: middle;
+    color:#253542;
+    width:30px;
+  }
+  .team {
+    text-align: justify;
+  }

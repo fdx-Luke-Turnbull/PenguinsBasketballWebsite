@@ -1,0 +1,52 @@
+/*Styling for Contact section.*/
+
+.contact_container {
+    display: flex;
+    font-size: large;
+    min-height: 350px;
+  }
+  .map {
+    border-radius: 5px 0px 0 5px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+  .contact_icon {
+    padding-right: 10px;
+    color:#253542;
+  }
+  .contactemail,
+  address,
+  .phone {
+    display: inline;
+    text-decoration: none;
+  }
+  .contactdetails a {
+    color: #253542;
+  }
+  .contactdetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+  }
+  .contact_details li {
+    margin: 5% 0;
+    list-style: none;
+    font-size:larger; 
+  }
+  @media (max-width:900px) {
+    .map {
+        display: none;
+    }
+    .contact_container {
+      font-size: medium;
+    }
+  
+  }
+  @media (min-width:900px) {
+    .contact_container iframe {
+        display:block;
+    }
+  }

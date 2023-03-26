@@ -1,0 +1,99 @@
+
+/*Styling for partners section.*/
+/*Small Screens */
+@media (max-width:900px) {
+    .partner_card {
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .partner_bio p {
+        display: none;
+    }
+  }
+  /*Desktop View*/
+  @media (min-width:900px) {
+    .partner_card_container {
+        display: grid;
+        grid-template: repeat(2, 1fr), 1fr / repeat(2, 1fr);
+        gap: 10px;   
+    }
+    .partner_card {
+        justify-content: space-between;
+    }
+    .sponsor:nth-child(1) {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+    .sponsor:nth-child(2) {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    }
+    .sponsor:nth-child(3) {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+  
+    }
+    .sponsor:nth-child(4) {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+    .sponsor_enquiries_card {
+        grid-column: 1 / 3;
+        grid-row: 3 / 3;
+    }
+  
+  }
+  /*Large Monitor*/
+  @media (min-width:1440px) {
+    .partner_card_container {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr) 10px 1fr;
+        gap: 10px;
+        padding-right: 20px;
+    }
+  
+    .sponsor:nth-child(1) {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+    .sponsor:nth-child(2) {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    }
+    .sponsor:nth-child(3) {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+    .sponsor:nth-child(4) {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+    .sponsor_enquiries_card {
+        grid-column: 4 / 4;
+        grid-row: 1 / 3;
+    }
+    .partner_bio p {
+        font-size: small;
+    }
+  }
+  .partner_card {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+  }
+  .partner_bio {
+    padding-right: 20px;
+    text-align: justify;
+  }
+  .expand {
+   font-weight: bold;
+  }
+  .expand:hover{
+    color: #D0894B;  
+  }
+  
+  .partner_image {
+    border-radius: 5px;
+    max-width: 160px;
+  }

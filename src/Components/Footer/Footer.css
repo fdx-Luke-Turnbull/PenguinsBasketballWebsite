@@ -1,0 +1,44 @@
+/*Styling for footer section.*/
+footer,
+.footer_endpage_container {
+  text-transform: uppercase;
+}
+footer a {
+  color: #253542;
+}
+.social_icon {
+  color: #f6f6f6;
+}
+/*Styling for footer banner and legal sections.*/
+footer {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+}
+.footer_banner {
+  border-top: 3px solid #D0894B;
+}
+.footer_banner,
+.legal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0px 5%;
+}
+.footer_banner ul,
+.policies ul {
+  list-style: none;
+} 
+.policies {
+  padding-left: 0;
+}
+.social_banner .icon,
+.policies li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.policies li:hover {
+  color:#D0894B;
+  text-decoration: none;
+}

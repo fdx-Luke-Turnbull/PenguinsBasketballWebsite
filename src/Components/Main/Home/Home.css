@@ -1,0 +1,37 @@
+.home_page {
+    padding: 0;
+    display: flex;
+  }
+  .mySlidesContainer {
+    max-height:90vh;
+  }
+  .mySlides {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Caption text */
+  .text {
+    color: #253542;
+    padding: 2.5vh 10%;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    justify-content: center;
+    text-align: justify;
+    background-color: #f6f6f6b1;
+    border-bottom: #D0894B 3px solid;
+  }
+  .text h3 {
+    text-transform: uppercase;
+  }
+  
+  @media (max-width:900px) {
+    .text p {
+        display:none;
+    }
+  }
+  /*End Here*/
+  .about_us_bio {
+    font-size: large;
+  }
+  

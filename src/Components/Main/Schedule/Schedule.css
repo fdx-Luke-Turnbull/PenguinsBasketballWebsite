@@ -1,0 +1,71 @@
+/*Styling for Schedule section.*/
+.schedule {
+    height:50vh;
+    padding-bottom: 10%;
+  }
+  .searchBarArea {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+  
+  }
+  .printSchedule {
+    display: flex;
+    align-items: center;
+  
+  }
+  .fa-magnifying-glass,
+  .fa-print {
+    padding-right: 10px;
+  }
+  .scheduleScrollContainer{
+    border-bottom: #D0894B 3px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow:hidden;
+  }
+  .scheduleContainer {
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 60vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .schedSearch {
+    margin: 5px auto;
+    padding: 5px;
+    width: 15vw;
+  }
+  .printSchedule:hover {
+    border:1px solid #253542;
+    cursor: pointer;
+  }
+  .gameCard {
+    display:flex;
+    justify-content: space-around;
+    border: #253542 2px solid;
+    padding:20px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  .gameCard p {
+    min-width: 120px;
+    white-space: none;
+    text-overflow: ellipsis;
+  }
+  
+  @media (max-width:900px) {
+    .gameLocation,
+    .gameTime,
+    .versus,
+    .homeGame {
+      display: none;
+    }
+  }
+  
+  

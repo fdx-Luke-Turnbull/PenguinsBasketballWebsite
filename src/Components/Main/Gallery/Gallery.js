@@ -1,17 +1,19 @@
 import React from "react";
+import "./Gallery.css"
 
+// store video gallery. Consider import of package or displaying videos as array.
 export default function Gallery() {
     return (
-        <section id="gallery" class="gallery primary">
-            <h2 class="section_header">Gallery</h2>
-            <div class="gallery_container">
-                <div class="gallery_card">
+        <section id="gallery" className="gallery primary">
+            <h2 className="section_header">Gallery</h2>
+            <div className="gallery_container">
+                <div className="gallery_card">
                     <iframe src="https://www.youtube.com/embed/7ahgosTZJHg?controls=0&loop=1" title="youtube video"></iframe>
                 </div>
-                <div class="gallery_card">
+                <div className="gallery_card">
                     <iframe src="https://www.youtube.com/embed/7ahgosTZJHg?controls=0&loop=1" title="youtube video"></iframe>
                 </div>
-                <div class="gallery_card">
+                <div className="gallery_card">
                     <iframe src="https://www.youtube.com/embed/7ahgosTZJHg?controls=0&loop=1" title="youtube video"></iframe>
                 </div>
             </div>

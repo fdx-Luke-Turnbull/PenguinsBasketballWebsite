@@ -1,0 +1,56 @@
+  /*Styling for enquiries form */
+  #partnerships_enquiries_section {
+    align-items: center;
+  }
+  .declaration {
+    font-size: small;
+    padding-bottom: 20px;
+  }
+  .sponsor_form {
+    height: 100%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+  }
+  .sponsor_form h3 {
+    text-align: center;
+  }
+  .sponsor_form input {
+    margin: 5px auto;
+    padding: 5px;
+  }
+  #sponsor_name,
+  #sponsor_org,
+  #sponsor_email {
+    width: 90% ;
+  }
+  #sponsor_consent { 
+    margin-top: 20px;
+    margin-right: 10px;
+    transform: scale(1.5);
+  }
+  #sponsor_consent:checked::after {
+    background-color: #D0894B;
+  }
+  .sponsor_submit {
+    width: 100px;
+    height: 40px;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    background-color: #D0894B;
+    transition: all .2s ease-in-out; 
+  
+  }
+  .sponsor_submit:hover { 
+    transform: scale(1.05); 
+    }
+    .decLink {
+      font-style: italic;
+    }
+  .decLink:hover {
+    color: #D0894B;
+  }
