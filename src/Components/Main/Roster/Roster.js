@@ -11,7 +11,7 @@ const playerRoster = [
         "age":"23",
         "height":"1.96",
         "position":"C",
-        "playerImage":"/images/player2.jpg"
+        "playerImage":"images/player2.jpg"
     },
     {
         "firstName":"Emily",
@@ -20,7 +20,7 @@ const playerRoster = [
         "age":"24",
         "height":"1.72",
         "position":"SF",
-        "playerImage":"/images/player1.jpg"
+        "playerImage":"images/player1.jpg"
 
     },
     {
@@ -30,7 +30,7 @@ const playerRoster = [
         "age":"27",
         "height":"1.83",
         "position":"PF",
-        "playerImage":"/images/player3.jpg"
+        "playerImage":"images/player3.jpg"
 
     },
     {
@@ -40,7 +40,7 @@ const playerRoster = [
         "age":"24",
         "height":"1.62",
         "position":"PG",
-        "playerImage":"/images/player4.jpg"
+        "playerImage":"images/player4.jpg"
 
     },
     {
@@ -50,7 +50,7 @@ const playerRoster = [
         "age":"25",
         "height":"1.91",
         "position":"PF",
-        "playerImage":"/images/player5.jpg"
+        "playerImage":"images/player5.jpg"
 
     },
     {
@@ -60,7 +60,7 @@ const playerRoster = [
         "age":"26",
         "height":"1.73",
         "position":"SG",
-        "playerImage":"/images/player6.jpg"
+        "playerImage":"images/player6.jpg"
 
     },
     {
@@ -70,7 +70,7 @@ const playerRoster = [
         "age":"27",
         "height":"1.71",
         "position":"SG",
-        "playerImage":"/images/player7.jpg"
+        "playerImage":"images/player7.jpg"
 
     },
     {
@@ -80,7 +80,7 @@ const playerRoster = [
         "age":"29",
         "height":"2.01",
         "position":"C",
-        "playerImage":"/images/player8.jpg"
+        "playerImage":"images/player8.jpg"
 
     },
     {
@@ -90,7 +90,7 @@ const playerRoster = [
         "age":"25",
         "height":"1.62",
         "position":"PG",
-        "playerImage":"/images/player9.jpg"
+        "playerImage":"images/player9.jpg"
 
     },
     {
@@ -100,7 +100,7 @@ const playerRoster = [
         "age":"31",
         "height":"1.83",
         "position":"SF",
-        "playerImage":"/images/player10.jpg"
+        "playerImage":"images/player10.jpg"
 
     },
     {
@@ -110,7 +110,7 @@ const playerRoster = [
         "age":"34",
         "height":"1.82",
         "position":"PF",
-        "playerImage":"/images/player11.jpg"
+        "playerImage":"images/player11.jpg"
 
     },
     {
@@ -120,7 +120,7 @@ const playerRoster = [
         "age":"28",
         "height":"1.71",
         "position":"SG",
-        "playerImage":"/images/player12.jpg"
+        "playerImage":"images/player12.jpg"
 
     },
 

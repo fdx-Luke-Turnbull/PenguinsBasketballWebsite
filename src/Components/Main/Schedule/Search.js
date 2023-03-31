@@ -3,7 +3,7 @@ import React, { Component } from "react";
 //function to download full game schedule > easiest to download attachment
 const onClickSchedule = () => {
     let  alink = document.createElement("a");   
-    alink.href = "/documents/Schedule.pdf";
+    alink.href = "documents/Schedule.pdf";
     alink.download = "Schedule.pdf";
     alink.click();  
        }

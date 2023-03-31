@@ -19,7 +19,7 @@ const Navigation = () => {
     const navList = navItems.map((nav,index) => 
         <li key={index} className ="nav_menu_item option" onClick={closeMobileMenu}> 
             {/*set href for page navigation*/}
-            <a href = {'#'+nav.toLowerCase()}>
+            <a href = {nav.toLowerCase()}>
                 {nav}
             </a>
         </li>);

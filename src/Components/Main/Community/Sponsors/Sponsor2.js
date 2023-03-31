@@ -13,7 +13,7 @@ export default function Sponsor2() {
             <p className="partner_desc"><Description text={PartnerDescription2}/></p>
           </div>
           <div>    
-            <img className="partner_image" src="/images/Style.jpg" alt="partner_logo"/>
+            <img className="partner_image" src="images/Style.jpg" alt="partner_logo"/>
           </div>
         </div>
       );

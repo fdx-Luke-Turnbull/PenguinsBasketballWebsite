@@ -49,6 +49,7 @@ html {
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
   text-align: justify;
+  scroll-behavior: smooth;
 }
 .primary {
   background-color: #f6f6f6;
