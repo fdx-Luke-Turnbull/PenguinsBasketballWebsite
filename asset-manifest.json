@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PenguinsBasketballWebsite/static/css/main.cbcfc79f.css",
-    "main.js": "/PenguinsBasketballWebsite/static/js/main.de67f9ea.js",
+    "main.css": "/PenguinsBasketballWebsite/static/css/main.aaa67c03.css",
+    "main.js": "/PenguinsBasketballWebsite/static/js/main.3ad517f2.js",
     "static/js/787.28cb0dcd.chunk.js": "/PenguinsBasketballWebsite/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/PenguinsBasketballWebsite/index.html",
-    "main.cbcfc79f.css.map": "/PenguinsBasketballWebsite/static/css/main.cbcfc79f.css.map",
-    "main.de67f9ea.js.map": "/PenguinsBasketballWebsite/static/js/main.de67f9ea.js.map",
+    "main.aaa67c03.css.map": "/PenguinsBasketballWebsite/static/css/main.aaa67c03.css.map",
+    "main.3ad517f2.js.map": "/PenguinsBasketballWebsite/static/js/main.3ad517f2.js.map",
     "787.28cb0dcd.chunk.js.map": "/PenguinsBasketballWebsite/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbcfc79f.css",
-    "static/js/main.de67f9ea.js"
+    "static/css/main.aaa67c03.css",
+    "static/js/main.3ad517f2.js"
   ]
 }
