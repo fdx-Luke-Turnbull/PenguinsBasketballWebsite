@@ -5,6 +5,10 @@ import HamburgerMenu from "./HamburgerMenu";
 import CloseMenu from "./CloseMenu";
 import "./Navigation.css"
 
+function refreshPage() {
+    window.location.reload(false);
+}
+
 //import Hamburger from "./Hamburger"
 const Navigation = () => {
 
@@ -18,9 +22,9 @@ const Navigation = () => {
     
     //map through array to build menu
     const navList = navItems.map((nav,index) => 
-        <li key={index} className ="nav_menu_item option" onClick={closeMobileMenu}>
+        <li key={index} className ="nav_menu_item option" >
             {/*set href for page navigation*/}
-            <Link className = {nav.toLowerCase()} to = {nav.toLowerCase()} spy={true} smooth={true} duration={300}>
+            <Link  to = {nav.toLowerCase()} spy={true} smooth={true} duration={300} onClick={closeMobileMenu}>
                 {nav}
             </Link>
         </li>);
@@ -28,7 +32,9 @@ const Navigation = () => {
     return (
         <nav id = "navbar_menu" className="navbar secondary"> 
         {/*import logo component*/}
+        <span onClick={refreshPage}>
         <Logo />
+        </span>
         <ul className={click ? "nav-options active" : "nav-options"}>
         {navList}
         </ul>

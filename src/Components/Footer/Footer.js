@@ -1,13 +1,24 @@
 import React from "react";
+import {animateScroll as scroll} from 'react-scroll'
 import Privacy from "./Privacy";
 import Logo from "../Logo/Logo"
 import "./Footer.css"
+
+
+
+// mimic a tag to reload page
+    function scrollToTop() {
+        scroll.scrollToTop({
+            spy:true, 
+            smooth:true, 
+            duration:300});
+      }
 
 export default function Footer() {
     return (
         <div className="footer">
             <div className="footer_banner secondary">
-                <div className="footer_logo_container">
+                <div className="footer_logo_container" onClick={scrollToTop}>
                     {/*import logo section for footer.*/}
                     <Logo />
                 </div>
