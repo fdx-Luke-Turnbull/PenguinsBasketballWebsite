@@ -1,5 +1,5 @@
 # Penguins Basketball
-This project has been created as part of the Swinburne Online - Graduate Certificate of Programming & Development unit COS60015 - Front-end Web Development. The autor of this project is Luke Turnbull.
+This project has been created as part of the Swinburne Online - Graduate Certificate of Programming & Development unit COS60015 - Front-end Web Development. The author of this project is Luke Turnbull.
 
 The requirements for this course are to develop a single page web application for a fictional sporting organisation. The site will function as the clients primary communication resource and is needing to include atleast all of the following:
 - navigation
