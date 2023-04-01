@@ -27,3 +27,6 @@ The Penguins are dedicated to promoting a love of the game and a sense of commun
 ### Testing
 - react-scripts
 - jest-axe
+
+## Disclaimer
+This product is produced for educational purposes and is not for commercial use. Any resemblance to existing intellectual property is unintended and purely coincidental.
