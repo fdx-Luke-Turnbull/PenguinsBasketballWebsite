@@ -6,7 +6,7 @@ export default function MailingListForm() {
     const onClickTerms = () => {
   
         let  alink = document.createElement("a");   
-        alink.href = "/documents/terms-and-conditions.pdf";
+        alink.href = "documents/terms-and-conditions.pdf";
         alink.download = "terms-and-conditions.pdf";
         alink.click();  
            }
@@ -14,7 +14,7 @@ export default function MailingListForm() {
     const onClickPrivacy = () => {
   
         let  alink = document.createElement("a");   
-        alink.href = "/documents/Privacy-policy-template.docx";
+        alink.href = "documents/Privacy-policy-template.docx";
         alink.download = "PrivacyPolicy.docx";
         alink.click();  
            }
