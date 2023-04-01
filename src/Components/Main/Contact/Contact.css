@@ -11,6 +11,9 @@
     margin: 0px;
     width: 100%;
   }
+  .contactemail:hover {
+    color:#D0894B
+  }
   .contact_icon {
     padding-right: 10px;
     color:#253542;

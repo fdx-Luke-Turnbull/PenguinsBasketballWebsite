@@ -1,27 +1,28 @@
-import React, { useState } from "react";
-import Logo from "../Logo/Logo"
-
-import CloseMenu from "./CloseMenu";
+import React, { useState}  from "react";
+import {Link} from 'react-scroll';
+import Logo from "../Logo/Logo";
 import HamburgerMenu from "./HamburgerMenu";
+import CloseMenu from "./CloseMenu";
 import "./Navigation.css"
 
 //import Hamburger from "./Hamburger"
 const Navigation = () => {
+
     // set menu open and close on click
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false); 
-    
+
     //list menu options as array
     const navItems = ["Schedule","Roster","Standings","Community","Gallery","Contact"];
     
     //map through array to build menu
     const navList = navItems.map((nav,index) => 
-        <li key={index} className ="nav_menu_item option" onClick={closeMobileMenu}> 
+        <li key={index} className ="nav_menu_item option" onClick={closeMobileMenu}>
             {/*set href for page navigation*/}
-            <a href = {nav.toLowerCase()}>
+            <Link className = {nav.toLowerCase()} to = {nav.toLowerCase()} spy={true} smooth={true} duration={300}>
                 {nav}
-            </a>
+            </Link>
         </li>);
 
     return (

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import EnhancedComponent from "./Search";
 import TeamDetails from "../TeamDetails/TeamDetails"
 
+
 import "./Schedule.css"
 
 //store game schedule for array

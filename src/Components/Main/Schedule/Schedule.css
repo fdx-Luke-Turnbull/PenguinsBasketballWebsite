@@ -41,7 +41,7 @@
     width: 15vw;
   }
   .printSchedule:hover {
-    border:1px solid #253542;
+    color: #D0894B;
     cursor: pointer;
   }
   .gameCard {

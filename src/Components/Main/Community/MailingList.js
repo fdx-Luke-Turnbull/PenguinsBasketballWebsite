@@ -22,7 +22,7 @@ export default function MailingListForm() {
     const [name, setName] = useState("");
     const handleSubmit = (event) => {
         event.preventDefault();
-        alert(`Welcome to the team ${name}! Keep an eye on your inbox for exciting news and developments.`)
+        alert(`Welcome to the team ${name}! Keep an eye on your inbox for exciting news and developments.`);
     }
 
     return (

@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import {Element} from 'react-scroll';
+
 
 //function to download full game schedule > easiest to download attachment
 const onClickSchedule = () => {
@@ -17,7 +19,8 @@ const EnhancedComponent = (OriginalComponent) => {
     }
     render() {      
       return (
-        <div>
+        <Element name="schedule" className="element">
+          <div>
           <h2 className="section_header">Schedule</h2>
           <div className="searchBarArea">
             <div>
@@ -31,6 +34,7 @@ const EnhancedComponent = (OriginalComponent) => {
           </div>
           <OriginalComponent searchTerm={this.state.searchTerm} />
         </div>
+        </Element>
       )
     }
   }

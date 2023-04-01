@@ -1,5 +1,7 @@
 import React from "react";
-import TeamDetails from "../TeamDetails/TeamDetails"
+import TeamDetails from "../TeamDetails/TeamDetails";
+import {Element} from 'react-scroll';
+
 
 import "./Standings.css"
 
@@ -111,25 +113,27 @@ const teamsDescending = [...allTeams].sort((a,b) => b.wins - a.wins);
 export default function Standings() {
 
     return (
-        <section id="standings" className="standings primary">
-            <h2 className="section_header">Standings</h2>
-            <table className = "standings_table" border="1px">
-                {/*display table headers. Consider storing as own component*/}
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th className="team">Team</th>
-                        <th>Wins</th>
-                        <th>Loses</th>
-                        <th>Win%</th>
-                        <th>GB</th>
-                        <th>Streak</th>
-                    </tr>
-                </thead>
-                <tbody>    
-                    {teamsDescending.map((team, index) => <TableRow key={team.team_name} rowNumber={index+1} {...team}/> )}
-                </tbody>
-            </table>
-        </section>
+        <Element name="standings" className="element">
+            <section id="standings" className="standings primary">
+                <h2 className="section_header">Standings</h2>
+                <table className = "standings_table" border="1px">
+                    {/*display table headers. Consider storing as own component*/}
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th className="team">Team</th>
+                            <th>Wins</th>
+                            <th>Loses</th>
+                            <th>Win%</th>
+                            <th>GB</th>
+                            <th>Streak</th>
+                        </tr>
+                    </thead>
+                    <tbody>    
+                        {teamsDescending.map((team, index) => <TableRow key={team.team_name} rowNumber={index+1} {...team}/> )}
+                    </tbody>
+                </table>
+            </section>
+        </Element>
       );
 }

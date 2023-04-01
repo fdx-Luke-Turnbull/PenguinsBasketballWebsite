@@ -38,6 +38,11 @@ footer {
   display: inline-block;
   margin-left: 15px;
 }
+
+.social_icon:hover {
+  color:#D0894B;
+}
+
 .policies li:hover {
   color:#D0894B;
   text-decoration: none;
