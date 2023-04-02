@@ -9,7 +9,7 @@ export default function Home() {
         <Carousel infiniteLoop autoPlay interval="5000" showThumbs={false} showIndicators={false} showStatus={false}>
         {/*Container 1*/}
         <div className="mySlidesContainer">
-            <img src="images/background-1.jpg" alt='background1'className="mySlides"/>
+            <img src="images/background-1.jpg" alt='carouselbackground1'className="mySlides"/>
             <div className="text">
                 <h3>Strength to Strength</h3>
                 <p>Forward Jeffries returns from injury in near loss to Kiwis.</p>
@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         {/*Container 2*/}
         <div className="mySlidesContainer">
-            <img src="images/background-2.jpg" alt='background2'className="mySlides"/>
+            <img src="images/background-2.jpg" alt='carouselbackground2'className="mySlides"/>
             <div className="text">
                 <h3>Flying High</h3>
                 <p>Penguins continue strong season performance with dominant win over rival Mariners.</p>
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
         {/*Container 3*/}
         <div className="mySlidesContainer">
-            <img src="images/background-3.jpg" alt='background3'className="mySlides"/>
+            <img src="images/background-3.jpg" alt='carouselbackground3'className="mySlides"/>
             <div className="text">
                 <h3>Standing Strong</h3>
                 <p>Penguins show impressive display to local crowd ahead of mid-season break.</p>
