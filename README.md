@@ -14,7 +14,7 @@ The requirements for this course are to develop a single page web application fo
 This web application is built using React.
 
 ## Deployed Site
-Deployed to gh-pages at: [https://lwturnbull.github.io/PenguinsBasketballWebsite/](https://lwturnbull.github.io/PenguinsBasketballWebsite/)
+Deployed to gh-pages at: https://fdx-luke-turnbull.github.io/PenguinsBasketballWebsite/
 
 ## About
 The Penguins are dedicated to promoting a love of the game and a sense of community through their determination, competetiveness, and teamwork on and off the court. We value togetherness above all else and want to ensure that all peoples feel welcome and respected at our games.
